@@ -11,7 +11,7 @@
     
     <h1 class="text-center">Negociações</h1>
     
-    <form class="form">
+    <form class="form" onsubmit="negCont.adiciona(event)">
         
         <div class="form-group">
             <label for="data">Data</label>
@@ -59,9 +59,11 @@
         </tfoot>
     </table>
     <script src="js/app/models/Negociacao.js"></script>
+    <script src="js/app/helpers/DateHelper.js"></script>
+    <script src="js/app/controllers/NegociacaoController.js"></script>
+    <script src="js/app/models/ListaNegociacoes.js"></script>
     <script>
-        var n1 = new Negociacao(new Date(),10,0.8);
-        console.log(n1.data);
+        let negCont = new NegociacaoController();
     
     
     </script>
