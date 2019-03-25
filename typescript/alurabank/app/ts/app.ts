@@ -1,9 +1,4 @@
-const negociacao = new Negociacao(new Date(), 1, 100);
+import {NegociacaoController} from './controllers/NegociacaoController';
 
 const controller = new NegociacaoController();
-
-const negociacoes = new Negociacoes();
-
-
-
 $('.form').submit(controller.adiciona.bind(controller));
